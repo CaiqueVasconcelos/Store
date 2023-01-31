@@ -25,7 +25,7 @@ jobs:
           scheme: ${{ 'default' }}
           platform: ${{ 'iOS Simulator' }}
         run: |
-          xcodebuild -scheme Store -workspace Store.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest'
+          xcodebuild -scheme Store -workspace Store.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 11,OS=16.2' -configuration Release build CODE_SIGNING_ALLOWED=NO
       - name: Test
         env:
           scheme: ${{ 'default' }}
